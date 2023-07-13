@@ -1,0 +1,49 @@
+                                                /* CONCEPT */
+
+/* 1. 
+      1(a.) Priority order (image) all properties is for the flex items.
+      1(b.) Priority order (image) all properties when flex-direction is row.
+      1(c.) Priority order (image) property i.e., width becomes height when flex-direction is coloumn.
+      
+   2. Difference between container elements and child elements:
+      2(a). Container elements: The container element, also known as the flex container, is the parent element that
+            contains a group of child elements. It is responsible for defining the main axis and cross axis of the 
+            flex layout. In CSS, you can create a flex container by applying the display: flex; property to an 
+            element. For example, consider the following HTML structure: 
+                     <div class="flex-container">
+                     <div class="child">Child 1</div>
+                     <div class="child">Child 2</div>
+                     <div class="child">Child 3</div>
+                     </div>
+                     In this case, the <div> element with the class "flex-container" acts as the flex container. 
+                     
+      2(b). Child Elements: Child elements, also known as flex items, are the individual elements contained within 
+            the flex container. These elements are positioned and aligned along the main axis and cross axis of the
+            flex layout according to the flex container's properties. The child elements are direct descendants of
+            the flex container. In the example HTML structure mentioned earlier, the <div> elements with the class 
+            "child" are the child elements.
+                     <div class="flex-container">
+                     <div class="child">Child 1</div>
+                     <div class="child">Child 2</div>
+                     <div class="child">Child 3</div>
+                     </div>
+                     Here, "Child 1," "Child 2," and "Child 3" are the child elements of the flex container.
+
+      CSS code:
+            CSS code for flex container 
+            .flex-container {
+               display: flex;
+               flex-direction: row; Specifies the main axis as horizontal 
+               justify-content: space-between; Aligns child elements with space between them 
+               align-items: center; Centers child elements vertically 
+            }
+            
+            CSS code for child elements 
+            .child {
+               flex-grow: 1; Allows child elements to grow and fill available space 
+               flex-basis: 0; Sets the initial size of child elements to 0 
+               padding: 10px; Adds padding to child elements 
+               background-color: #eaeaea; Sets background color for child elements 
+            } */
+
+         

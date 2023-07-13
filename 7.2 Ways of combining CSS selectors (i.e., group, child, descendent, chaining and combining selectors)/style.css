@@ -1,0 +1,34 @@
+/* Group */
+h1, h2{
+  color: blueviolet;
+}
+
+/* Child */
+.box > p{
+  color: firebrick;
+}
+
+/* Descendent */
+.box li{
+  color: blue;
+} 
+
+/* Chaining */
+li.done{ /* Element selector written first because then it makes sense. Consider .doneli, it makes sense, no na */
+  color: seagreen;
+} 
+
+/* Q-How chaining applied over descendent......?   
+   A-The chaining, li.done, overrides the color set by the descendent, .box li, because it has a higher specificity. 
+   Specificity is a way to determine which CSS cascade takes precedence when there are conflicting styles applied to 
+   the same element. In CSS, specificity is calculated based on the combination of selectors. The
+   more specific a selector is, the higher its specificity. In this case, the descendent, .box li has a lower 
+   specificity compared to the chaining, li.done. The descendent targets any li element that is a descendant of an 
+   element with the class "box". The chaining targets li elements that have the class "done" applied to them. 
+   Since the chaining is more specific , it takes precedence and overrides the color set by the descendent. 
+*/
+
+/* Combining combiners */
+ul p.done{
+  font-size: 0.5rem;
+}
